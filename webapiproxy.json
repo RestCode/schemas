@@ -41,7 +41,7 @@
             "title": "ProxyEndpoint schema.",
             "description": "The proxy endpoint containing the WebApiProxy metadata describing the service",
             "name": "proxyEndpoint",
-            "default": "http://foo.com"
+            "required": true
           },
           "clientSuffix": {
             "id": "http://webapiproxy.io/services/service/clientSuffix",
@@ -57,7 +57,7 @@
             "title": "Namespace schema.",
             "description": "Default unique namespace for generated clients specific to host",
             "name": "namespace",
-            "default": "MyAPIService"
+            "required": true
           },
           "name": {
             "id": "http://webapiproxy.io/services/service/name",
@@ -65,7 +65,7 @@
             "title": "Name schema.",
             "description": "An unique name to identify the API service",
             "name": "name",
-            "default": "MyAPIService"
+            "required": true
           },
           "includeValidation": {
             "id": "http://webapiproxy.io/services/service/includeValidation",
