@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://webapiproxy.io",
+  "id": "http://webapiproxy.io/csharp",
   "type": "object",
   "title": "Root schema.",
   "description": "An explanation about the puropose of this instance described by this schema.",
   "name": "/",
   "properties": {
     "generateOnBuild": {
-      "id": "http://webapiproxy.io/generateOnBuild",
+      "id": "http://webapiproxy.io/csharp/generateOnBuild",
       "type": "boolean",
       "title": "GenerateOnBuild schema.",
       "description": "A flag to generate every time upon build",
@@ -15,7 +15,7 @@
       "default": "false"
     },
     "generateAsyncReturnTypes": {
-      "id": "http://webapiproxy.io/generateAsyncReturnTypes",
+      "id": "http://webapiproxy.io/csharp/generateAsyncReturnTypes",
       "type": "boolean",
       "title": "GenerateAsyncReturnTypes schema.",
       "description": "A flag to generate async methods",
@@ -23,20 +23,20 @@
       "default": "false"
     },
     "services": {
-      "id": "http://webapiproxy.io/services",
+      "id": "http://webapiproxy.io/csharp/services",
       "type": "array",
       "title": "Services schema.",
       "description": "An explanation about the puropose of this instance described by this schema.",
       "name": "services",
       "items": {
-        "id": "http://webapiproxy.io/services/service",
+        "id": "http://webapiproxy.io/csharp/services/service",
         "type": "object",
         "title": "Service schema.",
         "description": "Definition of a single API service host",
         "name": "service",
         "properties": {
           "proxyEndpoint": {
-            "id": "http://webapiproxy.io/services/service/proxyEndpoint",
+            "id": "http://webapiproxy.io/csharp/services/service/proxyEndpoint",
             "type": "string",
             "title": "ProxyEndpoint schema.",
             "description": "The proxy endpoint containing the WebApiProxy metadata describing the service",
@@ -44,7 +44,7 @@
             "required": true
           },
           "clientSuffix": {
-            "id": "http://webapiproxy.io/services/service/clientSuffix",
+            "id": "http://webapiproxy.io/csharp/services/service/clientSuffix",
             "type": "string",
             "title": "ClientSuffix schema.",
             "description": "The suffix to use for the generated clients",
@@ -52,7 +52,7 @@
             "default": "Client"
           },
           "namespace": {
-            "id": "http://webapiproxy.io/services/service/namespace",
+            "id": "http://webapiproxy.io/csharp/services/service/namespace",
             "type": "string",
             "title": "Namespace schema.",
             "description": "Default unique namespace for generated clients specific to host",
@@ -60,7 +60,7 @@
             "required": true
           },
           "name": {
-            "id": "http://webapiproxy.io/services/service/name",
+            "id": "http://webapiproxy.io/csharp/services/service/name",
             "type": "string",
             "title": "Name schema.",
             "description": "An unique name to identify the API service",
@@ -68,7 +68,7 @@
             "required": true
           },
           "includeValidation": {
-            "id": "http://webapiproxy.io/services/service/includeValidation",
+            "id": "http://webapiproxy.io/csharp/services/service/includeValidation",
             "type": "boolean",
             "title": "IncludeValidation schema.",
             "description": "Includes any validation sourced from DataAnnotations",
@@ -76,7 +76,7 @@
             "default": "false"
           },
           "ensureSuccess": {
-            "id": "http://webapiproxy.io/services/service/ensureSuccess",
+            "id": "http://webapiproxy.io/csharp/services/service/ensureSuccess",
             "type": "boolean",
             "title": "EnsureSuccess schema.",
             "description": "Generates code to force throwing of exception when service does not reply with 200 OK",
